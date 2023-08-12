@@ -1,0 +1,118 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  display: flexbox;
+}
+
+body{
+  width: 100%;
+  background-color: #242424;
+  color: white;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+header{
+  margin-bottom: 15px;
+}
+
+#textContent{
+  padding: 4px 10px;
+  width: 25%;
+  height: 5vh;
+  border-radius: 8px;
+  border: #213547;
+  margin: 6px 10px;
+  font-size: 1em;
+}
+#buttonHeader{
+  cursor: pointer;
+  width: 90px;
+  height: 7vh;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  background-color: #081f6d;
+  border: 0px;
+  border-radius: 5px;
+}
+
+#buttonHeader:hover{
+  background-color: #08206dc5;
+}
+
+main{
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-color: #242424;
+}
+
+article{
+  border-top: 2px solid #D9D9D9;
+  min-height: 70vh;
+  height: auto;
+  align-items: center;
+}
+#ListComponent{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px auto;
+  color: #213547;
+  background-color: #D9D9D9;
+  width: 70%;
+  height: 10vh;
+  border-radius: 5px;
+}
+#button:checked + h1{
+  text-decoration: line-through;
+  color: #252525ad;
+}
+
+#button{
+  margin: 20px;
+  width: 100px;
+  padding: 12px;
+  border-right: 2px solid #213547;
+}
+
+#ListComponent img{
+  height: 70%;
+  padding: 9px;
+  border-left: 2px solid #213547;
+}
+
+#button{
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #213547;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+#button:hover{
+  background-color: #21354786;
+}
+
+footer{
+  padding: 20px;
+}
+
+@media (max-width: 650px){
+  #ListComponent{
+    width: 85%;
+  }
+  #ListComponent img{
+    height: 65%;
+  }
+}
+
+@media (max-width: 500px){
+  #ListComponent h1{
+    font-size: 1.2em;
+  }
+  #ListComponent img{
+    height: 55%;
+  }
+}
